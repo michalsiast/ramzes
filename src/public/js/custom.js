@@ -67,25 +67,35 @@ closeBtn.addEventListener("click", closeNav);
 
 
 
-  $(window).on('load', function () {
-    if ($(".shafull-container").length > 0) {
-        var $grid = $('.shafull-container');
-        $grid.shuffle({
-            itemSelector: '.shaf-item',
-            sizer: '.shaf-sizer'
-        });
-        /* reshuffle when user clicks a filter item */
-        $('.shaf-filter li').on('click', function () {
-            // set active class
-            $('.shaf-filter li').removeClass('active');
-            $(this).addClass('active');
-            // get group name from clicked item
-            var groupName = $(this).attr('data-group');
-            // reshuffle grid
-            $grid.shuffle('shuffle', groupName);
-        });
-    }
-});
+    $(window).on('load', function () {
+        if ($(".shafull-container").length > 0) {
+            var $grid = $('.shafull-container');
+            // Initialize the shuffle plugin
+            $grid.shuffle({
+                itemSelector: '.shaf-item',
+                sizer: '.shaf-sizer'
+            });
+
+            // Set data-group to 1 before any user interaction
+            // Find the filter item with data-group="1" and add 'active' class to it
+            var initialGroup = '1';
+            $('.shaf-filter li[data-group="' + initialGroup + '"]').addClass('active');
+            // Shuffle the grid for the initial group
+            $grid.shuffle('shuffle', initialGroup);
+
+            // Reshuffle when user clicks a filter item
+            $('.shaf-filter li').on('click', function () {
+                // Set active class
+                $('.shaf-filter li').removeClass('active');
+                $(this).addClass('active');
+                // Get group name from clicked item
+                var groupName = $(this).attr('data-group');
+                // Reshuffle grid
+                $grid.shuffle('shuffle', groupName);
+            });
+        }
+    });
+
 
     $(window).on('load', function () {
         if ($(".shafull-container").length > 0) {

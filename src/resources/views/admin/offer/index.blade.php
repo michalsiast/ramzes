@@ -27,7 +27,6 @@
                     <thead>
                         <tr>
                             <td>#</td>
-                            <td></td>
                             <td>{{__('admin.offer.title')}}</td>
                             <td>Kategoria</td>
                             <td>{{__('admin.active')}}</td>
@@ -40,18 +39,8 @@
                         @foreach($items as $key=>$offer)
                             <tr data-id="{{$offer->id}}">
                                 <td data-position>{{$i++}}</td>
-                                <td style="width: 50px">
-                                    <img src="{{renderSmallCover($offer)}}" alt="">
-                                </td>
                                 <td>
                                     {{$offer->title}}
-                                    @if(isset($offer->seo))
-                                        <small style="display: block">
-                                            <a @if($offer->active) target="_blank" @else style="color: grey; opacity: .75" @endif href="@if($offer->active){{url()->to('')}}{{$offer->seo->url}}@else#@endif">
-                                                {{str_replace(['https://', 'http://'], '', url()->to(''))}}{{$offer->seo->url}}
-                                            </a>
-                                        </small>
-                                    @endif
                                 </td>
                                 <td>{!! $offer->category->title ?? '' !!}</td>
                                 <td>

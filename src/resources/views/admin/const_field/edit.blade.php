@@ -72,8 +72,8 @@
                             {!! $form->renderFieldGroup('phone3') !!}
                             {!! $form->renderFieldGroup('email') !!}
 {{--                            {!! $form->renderFieldGroup('email2') !!}--}}
-                            {!! $form->renderFieldGroup('contact_form_email') !!}
-{{--                            {!! $form->renderFieldGroup('google_map') !!}--}}
+{{--                            {!! $form->renderFieldGroup('google_map_iframe') !!}--}}
+                            {!! $form->renderFieldGroup('google_map') !!}
                             {!! $form->renderFieldGroup('google_map_iframe') !!}
                         </div>
                     </div>

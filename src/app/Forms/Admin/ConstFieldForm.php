@@ -113,12 +113,12 @@ class ConstFieldForm extends Form
             'label' => 'admin.const_field.email2',
             'rules' => [],
         ],
-        'contact_form_email' => [
-            'name' => 'contact_form_email',
-            'type' => 'text',
-            'label' => 'admin.const_field.contact_form_email',
-            'rules' => [],
-        ],
+//        'contact_form_email' => [
+//            'name' => 'contact_form_email',
+//            'type' => 'text',
+//            'label' => 'admin.const_field.contact_form_email',
+//            'rules' => [],
+//        ],
         'google_map' => [
             'name' => 'google_map',
             'type' => 'text',

@@ -59,16 +59,16 @@
                         <div class="nav-main justify-content-between w-100">
                             <div class="logo">
                                 @if(!empty(getConstField('phone')))
-                                    <a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">{{getConstField('phone')}}</a>
+                                    <h4 class="logo_heading"><a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">{{getConstField('phone')}}</a></h4>
                                 @endif
                                 @if(!empty(getConstField('phone2')))
-                                    <br><a href="tel:{{str_replace(' ', '', getConstField('phone2'))}}">{{getConstField('phone2')}}</a>
+                                    <br><h4 class="logo_heading"><a href="tel:{{str_replace(' ', '', getConstField('phone2'))}}">{{getConstField('phone2')}}</a></h4>
                                 @endif
                                 @if(!empty(getConstField('phone3')))
-                                    <br><a href="tel:{{str_replace(' ', '', getConstField('phone3'))}}">{{getConstField('phone3')}}</a>
+                                    <br><h4 class="logo_heading"><a href="tel:{{str_replace(' ', '', getConstField('phone3'))}}">{{getConstField('phone3')}}</a></h4>
                                 @endif
                                 @if(!empty(getConstField('email')))
-                                    <br><a href="tel:{{str_replace(' ', '', getConstField('email'))}}">{{getConstField('email')}}</a>
+                                    <br><h4 class="logo_heading"><a href="tel:{{str_replace(' ', '', getConstField('email'))}}">{{getConstField('email')}}</a></h4>
                                 @endif
                             </div>
                             <div class="menu">
@@ -87,10 +87,19 @@
     <div class="container-full">
         <div class="mobile-header__container">
             <div class="p-left">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="./assets/images/logo/logo-header.svg" alt="logo">
-                    </a>
+                <div class="logo" style="padding-left: 10px">
+                    @if(!empty(getConstField('phone')))
+                        <h4 class="logo_heading"><a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">{{getConstField('phone')}}</a></h4>
+                    @endif
+                    @if(!empty(getConstField('phone2')))
+                        <br><h4 class="logo_heading"><a href="tel:{{str_replace(' ', '', getConstField('phone2'))}}">{{getConstField('phone2')}}</a></h4>
+                    @endif
+                    @if(!empty(getConstField('phone3')))
+                        <br><h4 class="logo_heading"><a href="tel:{{str_replace(' ', '', getConstField('phone3'))}}">{{getConstField('phone3')}}</a></h4>
+                    @endif
+                    @if(!empty(getConstField('email')))
+                        <br><h4 class="logo_heading"><a href="tel:{{str_replace(' ', '', getConstField('email'))}}">{{getConstField('email')}}</a></h4>
+                    @endif
                 </div>
             </div>
             <div class="p-right">
@@ -104,34 +113,7 @@
 <aside id="offcanvas-nav">
     <nav class="m-nav">
         <button id="nav-cls-btn"><i class="fa-solid fa-xmark"></i></button>
-        <div class="logo">
-            <a href="">
-                <img src="./assets/images/logo/logo-header.svg" alt="logo">
-            </a>
-        </div>
-        <ul class="nav-links">
-            <li class="dropdown"><a href="#">Home </a>
-
-                <ul class="d-menu">
-                    <li><a href="index.html">Home-01 </a> </li>
-                    <li><a href="index-2.html">Home-02</a></li>
-                </ul>
-
-
-            </li>
-            <li><a href="all-food.html">Menu</a></li>
-            <li>
-                <a href="about.html">About Us</a>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="dropdown"><a href="#">Blog</a>
-
-                <ul class="d-menu">
-                    <li><a href="blog.html">Blog </a> </li>
-                    <li><a href="blog-details.html">Blog-Details</a></li>
-                </ul>
-            </li>
-        </ul>
+        @include('default.nav_item.main', ['name' => 'main'])
 
     </nav>
 </aside>
@@ -217,11 +199,11 @@
                                     @endif
                                     @if(!empty(getConstField('company_address')))
                                         <li>
-                                            <a href="https://maps.app.goo.gl/6ReqFfFNaW13MKcF7">{{getConstField('company_address')}}</a>
+                                            <a target="_blank" href="{{getConstField('google_map')}}">{{getConstField('company_address')}}</a>
                                         </li>
                                     @endif
                                     <li>
-                                        <a href="https://maps.app.goo.gl/6ReqFfFNaW13MKcF7">{{getConstField('company_post_code')}} {{getConstField('company_city')}}</a>
+                                        <a target="_blank" href="{{getConstField('google_map')}}">{{getConstField('company_post_code')}} {{getConstField('company_city')}}</a>
                                     </li>
                                     @if(!empty(getConstField('opening_hours')))
                                         <li>

@@ -1,4 +1,4 @@
-@foreach($items as $item)
+@foreach($items->take(4) as $item)
     <div class="col-lg-3 col-md-6 res-mb-20px" data-aos="fade-right">
         <div class="categories-item  ">
             <div class="categories-icon">
@@ -11,7 +11,7 @@
 
             <div class="categories-item-text">
                 <h3>{{$item->title}}</h3>
-                <h4>Produktów</h4>
+{{--                <h4>Produktów</h4>--}}
             </div>
 
         </div>

@@ -30,44 +30,15 @@
         </div>
     </div>
 
-    <section class="food-details   ">
+    <section class="food-details  traditional">
         <div class="container">
-            <div class="row">
+            <div class="row tab-pane fade show in active" role="tabpanel">
                 <div class="col-lg-4">
                     @include('default.offer.category.home3')
                 </div>
                 <div class="col-lg-8">
-                    <div class="tab-content" id="pills-tabContent">
-
-                        <div class="tab-pane fade active show" id="pills-contact" role="tabpanel"
-                             aria-labelledby="pills-contact-tab">
-                            <div class="row popular-item-box-mt">
-                                @foreach($items as $item)
-                                <div class="col-lg-6" ata-groups='["{{$item->offer_category_id}}" ]'>
-                                    <div class="popular-item-box">
-                                        <div class="popular-inner-box">
-                                            <div class="popular-item-box-text">
-                                                <h3>{{$item->title}}</h3>
-                                            </div>
-
-                                            <div class="popular-inner-item">
-                                               <div class="text">
-                                                    <h5>{!! $item->text !!}</h5>
-                                                </div>
-                                            </div>
-                                            <div class="popular-inner-item-btm">
-                                                <div class="text">
-                                                    <h3>$20.00</h3>
-                                                </div>
-                                           </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                @endforeach
-                            </div>
-
-                        </div>
-
+                    <div class="row popular-item-box-mt shafull-container">
+                        @include('default.offer.home3')
                     </div>
                 </div>
             </div>

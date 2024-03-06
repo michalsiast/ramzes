@@ -79,7 +79,7 @@ class OfferForm extends Form
         'price_max' => [
             'name' => 'price_max',
             'type' => 'text',
-            'label' => 'admin.offer.offer.price_max',
+            'label' => 'admin.offer.price_max',
             'rules' => [],
         ],
         'price_max_label_active' => [
