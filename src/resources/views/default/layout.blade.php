@@ -20,6 +20,15 @@
     <link rel="icon" type="image/png" sizes="96x96" href="{{asset('image/favicon/favicon-96x96.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('image/favicon/favicon-16x16.png')}}">
     <link rel="manifest" href="{{asset('image/favicon//manifest.json')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/venobox.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/aos.css')}}">
+    <link rel="stylesheet" href="{{asset('css/slick.css')}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
+
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
@@ -40,16 +49,226 @@
     @stack('scrips.head.bottom')
 </head>
 <body>
+
+<header class="header  header-two  ">
+<nav class="menu-bg ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="nav-main">
+                        <div class="nav-main justify-content-between w-100">
+                            <div class="logo">
+                                @if(!empty(getConstField('phone')))
+                                    <a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">{{getConstField('phone')}}</a>
+                                @endif
+                                @if(!empty(getConstField('phone2')))
+                                    <br><a href="tel:{{str_replace(' ', '', getConstField('phone2'))}}">{{getConstField('phone2')}}</a>
+                                @endif
+                                @if(!empty(getConstField('phone3')))
+                                    <br><a href="tel:{{str_replace(' ', '', getConstField('phone3'))}}">{{getConstField('phone3')}}</a>
+                                @endif
+                                @if(!empty(getConstField('email')))
+                                    <br><a href="tel:{{str_replace(' ', '', getConstField('email'))}}">{{getConstField('email')}}</a>
+                                @endif
+                            </div>
+                            <div class="menu">
+                                @include('default.nav_item.main', ['name' => 'main'])
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- mobile navigation start -->
+<header class="mobile-header">
+    <div class="container-full">
+        <div class="mobile-header__container">
+            <div class="p-left">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="./assets/images/logo/logo-header.svg" alt="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="p-right">
+                <button id="nav-opn-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<aside id="offcanvas-nav">
+    <nav class="m-nav">
+        <button id="nav-cls-btn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="logo">
+            <a href="">
+                <img src="./assets/images/logo/logo-header.svg" alt="logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li class="dropdown"><a href="#">Home </a>
+
+                <ul class="d-menu">
+                    <li><a href="index.html">Home-01 </a> </li>
+                    <li><a href="index-2.html">Home-02</a></li>
+                </ul>
+
+
+            </li>
+            <li><a href="all-food.html">Menu</a></li>
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="dropdown"><a href="#">Blog</a>
+
+                <ul class="d-menu">
+                    <li><a href="blog.html">Blog </a> </li>
+                    <li><a href="blog-details.html">Blog-Details</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </nav>
+</aside>
+<main>
 {{--@include('default._helpers.lang_nav')--}}
-@include('default.nav_item.main', ['name' => 'main'])
 
 
 @yield('content')
+</main>
+<footer class="footer" style="background: url({{asset('images/Footers-bg.png')}}) no-repeat center/cover">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 col-md-12" data-aos="fade-right">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <img style="width: 250px" src="{{asset('images/logo.png')}}" alt="logo">
+                    </div>
+                </div>
+
+                <div class="footer-text">
+                    <h4>{{getConstField('company_description')}}</h4>
+                </div>
+
+                <div class="footer-icon">
+                    <div class="icon">
+                        <a href="{{getConstField('facebook')}}" target="_blank"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="{{getConstField('yellow_place')}}" target="_blank"><i class="fa-solid fa-map"></i></a>
+                        <a href="{{getConstField('tripadvisor')}}" target="_blank"><i class="fa-solid fa-tag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-7 mol-md-12 ">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6" data-aos="fade-right" data-aos-delay="100">
+                        <div class="quick-line-item">
+                            <div class="quick-line-item-head">
+                                <h3>Dane kontaktowe</h3>
+                            </div>
+
+
+                            <div class="quick-line-menu">
+                                <ul>
+                                    <li>
+                                        @if(!empty(getConstField('phone')))
+                                            <a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">Tel: {{getConstField('phone')}}</a>
+                                        @endif
+                                    </li>
+                                    <li>
+                                        @if(!empty(getConstField('phone2')))
+                                            <a href="tel:{{str_replace(' ', '', getConstField('phone2'))}}">Tel: {{getConstField('phone2')}}</a>
+                                        @endif
+                                    </li>
+                                    <li>
+                                        @if(!empty(getConstField('phone3')))
+                                            <a href="tel:{{str_replace(' ', '', getConstField('phone3'))}}">Tel: {{getConstField('phone3')}}</a>
+                                        @endif
+                                    </li>
+                                    <li>
+                                        @if(!empty(getConstField('email')))
+                                            <a href="tel:{{str_replace(' ', '', getConstField('email'))}}">Email: {{getConstField('email')}}</a>
+                                        @endif
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6" data-aos="fade-right" data-aos-delay="200">
+                        <div class="quick-line-item">
+                            <div class="quick-line-item-head">
+                                <h3>Lokalizacja</h3>
+                            </div>
+
+                            <div class="quick-line-menu">
+                                <ul>
+                                    @if(!empty(getConstField('company_name')))
+                                        <li>
+                                            <p>{{getConstField('company_name')}}</p>
+                                        </li>
+                                    @endif
+                                    @if(!empty(getConstField('company_address')))
+                                        <li>
+                                            <a href="https://maps.app.goo.gl/6ReqFfFNaW13MKcF7">{{getConstField('company_address')}}</a>
+                                        </li>
+                                    @endif
+                                    <li>
+                                        <a href="https://maps.app.goo.gl/6ReqFfFNaW13MKcF7">{{getConstField('company_post_code')}} {{getConstField('company_city')}}</a>
+                                    </li>
+                                    @if(!empty(getConstField('opening_hours')))
+                                        <li>
+                                            <p>{{getConstField('opening_hours')}}</p>
+                                        </li>
+                                    @endif
+                                        @if(!empty(getConstField('opening_hours_2')))
+                                            <li>
+                                                <p>{{getConstField('opening_hours_2')}}</p>
+                                            </li>
+                                        @endif
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="copyright-text">
+                    <h4><?php echo date("Y") ?> &copy; Wszelkie prawa zastrzeżone. Strona stworzona przez: <a href="https://palmax.com.pl"><span>Palmax</span></a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.3/simple-lightbox.jquery.min.js" integrity="sha512-iJCzEG+s9LeaFYGzCbDInUbnF03KbE1QV1LM983AW5EHLxrWQTQaZvQfAQgLFgfgoyozb1fhzhe/0jjyZPYbmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="{{asset('js/frontend.js')}}"></script>
 <script src="{{asset('js/main.min.js')}}"></script>
+
+
+<script src="{{asset('js/jquery-3.6.3.min.js')}}"></script>
+<script src="{{asset('js/venobox.min.js')}}"></script>
+<script src="{{asset('js/aos.js')}}"></script>
+<script src="{{asset('js/slick.min.js')}}"></script>
+<script src="{{asset('js//jquery.shuffle.min.js')}}"></script>
+<script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('js/custom.js')}}"></script>
 
 @stack('scripts.body.bottom')
 </body>

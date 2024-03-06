@@ -33,7 +33,10 @@ class ViewServiceProvider extends ServiceProvider
         View::composer('default.article.home', 'App\Http\Controllers\ArticleController@home');
 
         View::composer('default.offer.category.home', 'App\Http\Controllers\OfferCategoryController@home');
+        View::composer('default.offer.category.home2', 'App\Http\Controllers\OfferCategoryController@home');
+        View::composer('default.offer.category.home3', 'App\Http\Controllers\OfferCategoryController@home');
         View::composer('default.offer.home', 'App\Http\Controllers\OfferController@home');
+        View::composer('default.offer.home2', 'App\Http\Controllers\OfferController@home');
 
         View::composer('default.realization.category.home', 'App\Http\Controllers\RealizationCategoryController@home');
         View::composer('default.realization.home', 'App\Http\Controllers\RealizationController@home');

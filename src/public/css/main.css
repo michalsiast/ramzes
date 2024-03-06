@@ -75,6 +75,16 @@ a:focus {
   background-size: cover;
   background-position: center center;
 }
+.mainRotator__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
 .mainRotator__itemBody {
   position: absolute;
   top: 50%;
@@ -82,6 +92,10 @@ a:focus {
   transform: translate(-50%, -50%);
   width: 80%;
   text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .mainRotator__itemBody h2 {
   font-size: 4rem;

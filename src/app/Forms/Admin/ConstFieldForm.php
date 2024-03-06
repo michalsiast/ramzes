@@ -29,6 +29,12 @@ class ConstFieldForm extends Form
             'label' => 'admin.const_field.company_name',
             'rules' => [],
         ],
+        'company_description' => [
+            'name' => 'company_description',
+            'type' => 'text',
+            'label' => 'admin.const_field.company_description',
+            'rules' => [],
+        ],
         'company_address' => [
             'name' => 'company_address',
             'type' => 'text',
@@ -39,6 +45,18 @@ class ConstFieldForm extends Form
             'name' => 'company_city',
             'type' => 'text',
             'label' => 'admin.const_field.company_city',
+            'rules' => [],
+        ],
+        'opening_hours' => [
+            'name' => 'opening_hours',
+            'type' => 'text',
+            'label' => 'admin.const_field.opening_hours',
+            'rules' => [],
+        ],
+        'opening_hours_2' => [
+            'name' => 'opening_hours_2',
+            'type' => 'text',
+            'label' => 'admin.const_field.opening_hours_2',
             'rules' => [],
         ],
         'company_post_code' => [
@@ -77,6 +95,12 @@ class ConstFieldForm extends Form
             'label' => 'admin.const_field.phone2',
             'rules' => [],
         ],
+        'phone3' => [
+            'name' => 'phone3',
+            'type' => 'text',
+            'label' => 'admin.const_field.phone3',
+            'rules' => [],
+        ],
         'email' => [
             'name' => 'email',
             'type' => 'text',
@@ -111,6 +135,18 @@ class ConstFieldForm extends Form
             'name' => 'facebook',
             'type' => 'text',
             'label' => 'Facebook',
+            'rules' => [],
+        ],
+        'yellow_place' => [
+            'name' => 'yellow_place',
+            'type' => 'text',
+            'label' => 'Yellow Places',
+            'rules' => [],
+        ],
+        'tripadvisor' => [
+            'name' => 'tripadvisor',
+            'type' => 'text',
+            'label' => 'Tripadvisor',
             'rules' => [],
         ],
         'instagram' => [

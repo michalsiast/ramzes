@@ -20,8 +20,12 @@ abstract class PageType extends Enum
         'module' => false,
         'fields' => [
             'rotator' => ['rotator', 'Slider'],
-            'head1' => ['head', 'Tytuł'],
-            'text1' => ['text', 'Tekst'],
+            'category_heading' => ['head', 'Nagłówek - Kategorie'],
+            'promo_link_1' => ['head', 'Link 1 - Sekcja promocyjna'],
+            'promo_link_2' => ['head', 'Link 2 - Sekcja promocyjna'],
+            'menu_heading' => ['head', 'Nagłówek - Menu'],
+            'ordering_process_heading' => ['head', 'Nagłówek - Proces zamawiania'],
+            'popular_products_heading' => ['head', 'Nagłówek - Popularne produkty'],
         ]
     ];
     const PAGE_SHOW = [
@@ -42,7 +46,8 @@ abstract class PageType extends Enum
         'name' => 'about-us.show',
         'module' => false,
         'fields' => [
-            'text1' => ['text', '']
+            'about_us_heading' => ['head', 'Nagłówek - O nas'],
+            'about_us_description' => ['text', 'Opis - O nas']
         ]
     ];
     const CONTACT_SHOW = [

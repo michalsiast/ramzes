@@ -2,13 +2,13 @@
     @if($rotator->arrows)
         <button class="prev"> ❰</button>
     @endif
-    <div class="mainRotator__items" id="rotator{{$rotator->id}}">
+    <div class="mainRotator__items banner-two" id="rotator{{$rotator->id}}">
         @foreach($rotator->gallery->items as $item)
             <div class="mainRotator__item"
                  style="background-image: url('{{renderImage($item->url, 1920, 700, `fit`)}}')">
-                <div class="mainRotator__itemBody">
-                    <h2>{{$item->name}}</h2>
-                    {!! $item->text !!}
+                <div class="mainRotator__itemBody banner-two-taitel">
+                    <img style="width: 500px" src="{{asset('images/logo.png')}}" alt="logo">
+                    <h1>{!! $item->text !!}</h1>
                 </div>
             </div>
         @endforeach

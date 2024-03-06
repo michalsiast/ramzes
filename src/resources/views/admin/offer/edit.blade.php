@@ -32,9 +32,22 @@
 
                             {!! $form->renderFieldGroup('offer_category_id') !!}
                             {!! $form->renderFieldGroup('title') !!}
-                            {!! $form->renderFieldGroup('lead') !!}
+{{--                            {!! $form->renderFieldGroup('lead') !!}--}}
                             {!! $form->renderFieldGroup('text') !!}
-
+                            <div class="row">
+                                <div class="col-md-4">
+                                    {!! $form->renderFieldGroup('price_min') !!}
+                                    {!! $form->renderFieldGroup('price_min_label_active') !!}
+                                </div>
+                                <div class="col-md-4">
+                                    {!! $form->renderFieldGroup('price_average') !!}
+                                    {!! $form->renderFieldGroup('price_average_label_active') !!}
+                                </div>
+                                <div class="col-md-4">
+                                    {!! $form->renderFieldGroup('price_max') !!}
+                                    {!! $form->renderFieldGroup('price_max_label_active') !!}
+                                </div>
+                            </div>
                             <hr>
                             {!! $form->renderFieldGroup('active') !!}
 

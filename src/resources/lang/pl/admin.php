@@ -67,7 +67,7 @@ return [
 
 
     'article.singular' => 'Artykuł',
-    'article.plural' => 'Artykuły',
+    'article.plural' => 'Zamów u nas',
     'article.title' => 'Tytuł',
     'article.lead' => 'Wprowadzenie',
     'article.text' => 'Tekst',
@@ -119,8 +119,13 @@ return [
     'offer.singular' => 'Oferta',
     'offer.plural' => 'Oferty',
     'offer.title' => 'Tytuł',
-    'offer.lead' => 'Wprowadzenie',
     'offer.text' => 'Tekst',
+    'offer.price_min' => 'Cena najmniejsza',
+    'offer.price_min_label_active' => 'Czy wyświetlić nagłówek',
+    'offer.price_average' => 'Cena średnia',
+    'offer.price_average_label_active' => 'Czy wyświetlić nagłówek',
+    'offer.price_max' => 'Cena największa',
+    'offer.price_max_label_active' => 'Czy wyświetlić nagłówek',
 
 
     'offer_category.singular' => 'Kategoria oferty',
@@ -151,6 +156,7 @@ return [
     'const_field.contact_details' => 'Kontakt',
     'const_field.page_title' => 'Tytuł',
     'const_field.company_name' => 'Nazwa',
+    'const_field.company_description' => 'Opis firmy',
     'const_field.company_post_code' => 'Kod pocztowy',
     'const_field.company_address' => 'Adres',
     'const_field.company_city' => 'Miasto',
@@ -159,6 +165,9 @@ return [
     'const_field.company_krs' => 'KRS',
     'const_field.phone' => 'Nr. kontaktowy',
     'const_field.phone2' => 'Nr. kontaktowy 2',
+    'const_field.phone3' => 'Nr. kontaktowy 3',
+    'const_field.opening_hours' => 'Godziny otwarcia',
+    'const_field.opening_hours_2' => 'Godziny otwarcia 2',
     'const_field.email' => 'Email',
     'const_field.email2' => 'Email 2',
     'const_field.contact_form_email' => 'Wysyłaj maile na adres',

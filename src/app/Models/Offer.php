@@ -15,6 +15,12 @@ class Offer extends BaseModel
         'text',
         'position',
         'active',
+        'price_min',
+        'price_min_label_active',
+        'price_average',
+        'price_average_label_active',
+        'price_max',
+        'price_max_label_active',
     ];
 
 
