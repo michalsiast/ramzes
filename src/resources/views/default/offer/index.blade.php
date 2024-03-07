@@ -37,7 +37,7 @@
                     @include('default.offer.category.home3')
                 </div>
                 <div class="col-lg-8">
-                    <div class="row popular-item-box-mt shafull-container">
+                    <div class="row popular-item-box-mt shafull-container-menu">
                         @include('default.offer.home3')
                     </div>
                 </div>

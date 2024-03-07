@@ -89,8 +89,8 @@ closeBtn.addEventListener("click", closeNav);
 
 
     $(window).on('load', function () {
-        if ($(".shafull-container").length > 0) {
-            var $grid = $('.shafull-container');
+        if ($(".shafull-container-menu").length > 0) {
+            var $grid = $('.shafull-container-menu');
             $grid.shuffle({
                 itemSelector: '.shaf-item',
                 sizer: '.shaf-sizer'
