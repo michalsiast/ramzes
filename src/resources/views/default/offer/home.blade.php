@@ -6,7 +6,7 @@
 @endphp
 
 @foreach($filteredItems as $item)
-<div class="col-lg-6 popular-item-mt-30px" data-aos="fade-up">
+<div class="col-lg-6 popular-item-mt-30px">
     <div class="popular-item-box">
         <div class="popular-inner-box">
             <div class="popular-item-box-text">

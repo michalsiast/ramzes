@@ -126,7 +126,7 @@
 <footer class="footer" style="background: url({{asset('images/Footers-bg.png')}}) no-repeat center/cover">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 col-md-12" data-aos="fade-right">
+            <div class="col-lg-5 col-md-12">
                 <div class="footer-logo">
                     <div class="logo">
                         <img style="width: 250px" src="{{asset('images/logo.png')}}" alt="logo">
@@ -150,7 +150,7 @@
 
             <div class="col-lg-7 mol-md-12 ">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6" data-aos="fade-right" data-aos-delay="100">
+                    <div class="col-lg-6 col-md-6">
                         <div class="quick-line-item">
                             <div class="quick-line-item-head">
                                 <h3>Dane kontaktowe</h3>
@@ -184,7 +184,7 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="col-lg-6 col-md-6">
                         <div class="quick-line-item">
                             <div class="quick-line-item-head">
                                 <h3>Lokalizacja</h3>

@@ -93,7 +93,7 @@
 <section class="process s-padding" style="background-image: url({{ asset('images/Process-bg.png')}})">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 " data-aos="fade-right">
+            <div class="col-lg-6 ">
                 <div class="process-img-box">
                     <div class="process-img">
                         <img src="{{ asset('images/zamow_u_nas.jpg')}}" alt="thumb" style="object-fit: cover">
@@ -103,7 +103,7 @@
 
             <div class="col-lg-6 col-md-12">
                 @if(!empty($fields->ordering_process_heading))
-                    <div class="process-head" data-aos="fade-up">
+                    <div class="process-head">
                         <h2>{{$fields->ordering_process_heading}}</h2>
                     </div>
                 @endif
