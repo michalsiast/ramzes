@@ -29,7 +29,7 @@
     </div>
 </section>
 
-<div class="promotions promotions-two">
+<div class="promotions promotions-two" style="padding-bottom: 80px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-md-5">
@@ -57,38 +57,6 @@
         </div>
     </div>
 </div>
-
-<section class="traditional s-padding" style="background-image: url({{asset('images/traditional-bg.png')}})">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-6">
-                @if(!empty($fields->menu_heading))
-                    <div class="traditional-head">
-                        <h2>{{$fields->menu_heading}}</h2>
-                    </div>
-                @endif
-            </div>
-        </div>
-
-        <!-- Grid Tab -->
-        <div class="tab-pane fade show in active" id="grid" role="tabpanel">
-            <!-- Filter Title -->
-            @include('default.offer.category.home')
-            <!-- Filter Title -->
-            <!-- Filter Content -->
-            <div class="row shafull-container">
-                @include('default.offer.home2')
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="traditional-btn">
-                        <a href="{{route('offer.index')}}" class="main-btn-four">Zobacz więcej</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section class="process s-padding" style="background-image: url({{ asset('images/Process-bg.png')}})">
     <div class="container">

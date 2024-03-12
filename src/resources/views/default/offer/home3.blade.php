@@ -15,7 +15,7 @@
                 @if(!empty($item->price_min) || !empty($item->price_max) || !empty($item->price_average))
                     <div class="popular-inner-item-btm">
                         <div class="text">
-                            <h3>@if(!empty($item->price_min))<span style="padding-right: 20px; white-space: nowrap;">@if($item->price_min_label_active === 1) Mała: @endif {{$item->price_min}}zł</span>@endif @if(!empty($item->price_average))<span style="padding-right: 20px; white-space: nowrap;">@if($item->price_average_label_active === 1) Średnia: @endif {{$item->price_average}}zł</span>@endif @if(!empty($item->price_max))<span style="white-space: nowrap;">@if($item->price_max_label_active === 1) Familijna:@endif  {{$item->price_max}}zł</span>@endif</h3>
+                            <h3>@if(!empty($item->price_min))<span style="padding-right: 20px; white-space: nowrap;">@if($item->price_min_label_active === 1) Mała (22cm): @endif {{$item->price_min}}zł</span>@endif @if(!empty($item->price_average))<span style="padding-right: 20px; white-space: nowrap;">@if($item->price_average_label_active === 1) Średnia (30cm): @endif {{$item->price_average}}zł</span>@endif @if(!empty($item->price_max))<span style="white-space: nowrap;">@if($item->price_max_label_active === 1) Familijna (40cm):@endif  {{$item->price_max}}zł</span>@endif</h3>
                         </div>
                     </div>
                 @endif
