@@ -48,6 +48,9 @@
                                     {!! $form->renderFieldGroup('price_max_label_active') !!}
                                 </div>
                             </div>
+                            {!! $form->renderFieldGroup('vegan_active') !!}
+                            {!! $form->renderFieldGroup('sharp_active') !!}
+                            {!! $form->renderFieldGroup('kids_active') !!}
                             <hr>
                             {!! $form->renderFieldGroup('active') !!}
 

@@ -3,7 +3,15 @@
         <div class="popular-item-box">
             <div class="popular-inner-box">
                 <div class="popular-item-box-text">
-                    <h3>{{$item->title}}</h3>
+                    @if($item->vegan_active === 1)
+                        <h3 style="color: #44c744;">{{$item->title}}</h3>
+                    @elseif($item->sharp_active === 1)
+                        <h3 style="color: #ed1c24;">{{$item->title}}</h3>
+                        @elseif($item->kids_active === 1)
+                        <h3 style="color: #FFB6C1;">{{$item->title}} <i class="fa-solid fa-children" style="margin-left: 10px"></i></h3>
+                    @else
+                        <h3>{{$item->title}}</h3>
+                    @endif
                 </div>
                 @if(!empty($item->text))
                 <div class="popular-inner-item">

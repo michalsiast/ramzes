@@ -23,6 +23,8 @@ abstract class PageType extends Enum
             'category_heading' => ['head', 'Nagłówek - Kategorie'],
             'promo_link_1' => ['head', 'Link 1 - Sekcja promocyjna'],
             'promo_link_2' => ['head', 'Link 2 - Sekcja promocyjna'],
+            'promo_text_1' => ['head', 'Tekst 1 - Sekcja promocyjna'],
+            'promo_text_2' => ['head', 'Tekst 2 - Sekcja promocyjna'],
             'menu_heading' => ['head', 'Nagłówek - Menu'],
             'ordering_process_heading' => ['head', 'Nagłówek - Proces zamawiania'],
             'popular_products_heading' => ['head', 'Nagłówek - Popularne produkty'],

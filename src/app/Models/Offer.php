@@ -21,6 +21,9 @@ class Offer extends BaseModel
         'price_average_label_active',
         'price_max',
         'price_max_label_active',
+        'vegan_active',
+        'sharp_active',
+        'kids_active',
     ];
 
 

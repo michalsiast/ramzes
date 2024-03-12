@@ -127,6 +127,10 @@ return [
     'offer.price_max' => 'Cena największa',
     'offer.price_max_label_active' => 'Czy wyświetlić nagłówek',
 
+    'offer.vegan_active' => 'Oznaczyć jako wegetariańską?',
+    'offer.sharp_active' => 'Oznaczyć jako ostrą?',
+    'offer.kids_active' => 'Oznaczyć jako dla dzieci?',
+
 
     'offer_category.singular' => 'Kategoria oferty',
     'offer_category.plural' => 'Kategorie ofert',

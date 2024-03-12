@@ -89,6 +89,27 @@ class OfferForm extends Form
             'rules' => [],
             'options' => [],
         ],
+        'vegan_active' => [
+            'name' => 'vegan_active',
+            'type' => 'checkbox',
+            'label' => 'admin.offer.vegan_active',
+            'rules' => [],
+            'options' => [],
+        ],
+        'sharp_active' => [
+            'name' => 'sharp_active',
+            'type' => 'checkbox',
+            'label' => 'admin.offer.sharp_active',
+            'rules' => [],
+            'options' => [],
+        ],
+        'kids_active' => [
+            'name' => 'kids_active',
+            'type' => 'checkbox',
+            'label' => 'admin.offer.kids_active',
+            'rules' => [],
+            'options' => [],
+        ],
     ];
 
     public function __construct($model = null)

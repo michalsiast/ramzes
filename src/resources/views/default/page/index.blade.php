@@ -58,6 +58,20 @@
     </div>
 </div>
 
+<div class="promotions promotions-two" style="padding-bottom: 80px;">
+    <div class="container">
+        @if(!empty($fields->promo_text_1))
+        <div class="popular-head">
+            <h2 class="text-center" style="color: #ed1c24; font-weight: 600">{{$fields->promo_text_1}}</h2>
+        </div>
+        @endif
+            @if(!empty($fields->promo_text_2))
+        <div class="popular-head">
+            <h2 class="text-center" style="color: #ed1c24; font-weight: 600">{{$fields->promo_text_2}}</h2>
+        </div> @endif
+    </div>
+</div>
+
 <section class="process s-padding" style="background-image: url({{ asset('images/Process-bg.png')}})">
     <div class="container">
         <div class="row">
