@@ -1,7 +1,7 @@
 <div class="blog-details">
     <div class="latest-blog-box">
         <div class="latest-blog-box-text">
-            <h3>Menu</h3>
+            <h3>Menu:</h3>
         </div>
 
         <ul class="latest-blog-box-item">

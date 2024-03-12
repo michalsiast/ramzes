@@ -2071,7 +2071,7 @@ p {
     margin-bottom: 20px;
 }
 .blog-details .latest-blog-box .latest-blog-box-text h3 {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 150%; /* 36px */
   letter-spacing: -0.24px;
@@ -2089,7 +2089,7 @@ p {
     color: var(--primary-color);
 }
 .blog-details .latest-blog-box .latest-blog-box-item .latest-blog-box-item-inner .latest-blog-box-item-inner-text p {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 145%; /* 26.1px */
   letter-spacing: -0.09px;

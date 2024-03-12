@@ -37,7 +37,7 @@
                 </div>
                 @endif
                 <div class="text-item-center">
-                    <h3><a href="{{route('offer.show.'.$item->id)}}">{{$item->title}}</a></h3>
+                    <h3><a href="{{route('offer.index')}}">{{$item->title}}</a></h3>
                 </div>
                 <div class="text-item-center-item-box">
                     <div class="text-item-center-item">
