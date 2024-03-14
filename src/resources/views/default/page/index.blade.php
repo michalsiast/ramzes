@@ -16,7 +16,7 @@
     </div>
 </div>
 @endif
-<section class="categories categories-two s-padding" style="background-image: url({{asset('images/categories-bg.png')}})">
+<section class="categories categories-two s-padding" >
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6  ">
