@@ -6,6 +6,16 @@
 {{--    <span style="display: block">{!! getFooterCreator() !!}</span>--}}
 
     @include('default.rotator.base', ['id_rotator' => $fields->rotator, 'type' => 'main'])
+
+<div class="promotions promotions-two" style="padding-bottom: 80px;">
+    <div class="container">
+        @if(!empty($fields->important_message))
+            <div class="popular-head">
+                <h2 class="text-center" style="color: #ed1c24; font-weight: 700; font-size: 38px">{{$fields->important_message}}</h2>
+            </div>
+        @endif
+    </div>
+</div>
 <section class="categories categories-two s-padding" style="background-image: url({{asset('images/categories-bg.png')}})">
     <div class="container">
         <div class="row align-items-center">
