@@ -117,7 +117,7 @@
 
     </nav>
 </aside>
-<main>
+<main class="background-opacity-body">
 {{--@include('default._helpers.lang_nav')--}}
 
 

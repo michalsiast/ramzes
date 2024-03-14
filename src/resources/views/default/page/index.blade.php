@@ -70,18 +70,15 @@
 
 <div class="promotions promotions-two" style="padding-bottom: 80px;">
     <div class="container">
-        @if(!empty($fields->promo_text_1))
-        <div class="popular-head">
-            <h2 class="text-center" style="color: #ed1c24; font-weight: 600">{{$fields->promo_text_1}}</h2>
-        </div>
-        @endif
-            @if(!empty($fields->promo_text_2))
-        <div class="popular-head">
-            <h2 class="text-center" style="color: #ed1c24; font-weight: 600">{{$fields->promo_text_2}}</h2>
-        </div> @endif
+        @foreach($page->gallery->items as $item)
+            @if($item->name == 'ulotka')
+            <div class="d-flex justify-content-center">
+                <img style="width: 100%; max-width: 600px" src="{{renderImage($item->url, 700, 600, 'fit')}}" alt="">
+            </div>
+            @endif
+        @endforeach
     </div>
 </div>
-
 <section class="process s-padding" style="background-image: url({{ asset('images/Process-bg.png')}})">
     <div class="container">
         <div class="row">
