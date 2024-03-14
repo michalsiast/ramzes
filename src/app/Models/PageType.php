@@ -20,7 +20,7 @@ abstract class PageType extends Enum
         'module' => false,
         'fields' => [
             'rotator' => ['rotator', 'Slider'],
-            'important_message' => ['head', 'Ważna wiadomość'],
+            'important_message' => ['head', 'Wiadomość dla klienta'],
             'category_heading' => ['head', 'Nagłówek - Kategorie'],
             'promo_link_1' => ['head', 'Link 1 - Sekcja promocyjna'],
             'promo_link_2' => ['head', 'Link 2 - Sekcja promocyjna'],

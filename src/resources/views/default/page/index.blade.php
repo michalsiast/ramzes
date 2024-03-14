@@ -10,9 +10,9 @@
 @if(!empty($fields->important_message))
 <div class="promotions promotions-two" style="padding-top: 80px">
     <div class="container">
-            <div class="popular-head">
-                <h2 class="text-center" style="color: #ed1c24; font-weight: 700; font-size: 38px">{{$fields->important_message}}</h2>
-            </div>
+        <div class="popular-head">
+            <h2 class="text-center" style="color: #ed1c24; font-weight: 700; font-size: 38px">{{$fields->important_message}}</h2>
+        </div>
     </div>
 </div>
 @endif
