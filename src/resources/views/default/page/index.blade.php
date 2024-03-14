@@ -7,7 +7,7 @@
 
     @include('default.rotator.base', ['id_rotator' => $fields->rotator, 'type' => 'main'])
 
-<div class="promotions promotions-two" style="padding-bottom: 80px;">
+<div class="promotions promotions-two" style="padding-bottom: 80px; padding-top: 80px">
     <div class="container">
         @if(!empty($fields->important_message))
             <div class="popular-head">
