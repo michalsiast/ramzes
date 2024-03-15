@@ -29,19 +29,7 @@
             </div>
         </div>
     </div>
+    @include('default.offer.category.home3')
 
-    <section class="food-details  traditional">
-        <div class="container">
-            <div class="row tab-pane fade show in active" role="tabpanel">
-                <div class="col-lg-4">
-                    @include('default.offer.category.home3')
-                </div>
-                <div class="col-lg-8">
-                    <div class="row popular-item-box-mt shafull-container-menu">
-                        @include('default.offer.home3')
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 @endsection

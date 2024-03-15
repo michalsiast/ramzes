@@ -2071,7 +2071,7 @@ p {
     margin-bottom: 20px;
 }
 .blog-details .latest-blog-box .latest-blog-box-text h3 {
-  font-size: 30px;
+  font-size: 34px;
   font-weight: 700;
   line-height: 150%; /* 36px */
   letter-spacing: -0.24px;
@@ -2085,11 +2085,11 @@ p {
   color: var(--primary-color);
 }
 
-.blog-details .latest-blog-box .latest-blog-box-item .latest-blog-box-item-inner .latest-blog-box-item-inner-text li.active p {
+.blog-details .latest-blog-box .latest-blog-box-item .latest-blog-box-item-inner .latest-blog-box-item-inner-text li a:hover {
     color: var(--primary-color);
 }
-.blog-details .latest-blog-box .latest-blog-box-item .latest-blog-box-item-inner .latest-blog-box-item-inner-text p {
-  font-size: 20px;
+.blog-details .latest-blog-box .latest-blog-box-item .latest-blog-box-item-inner .latest-blog-box-item-inner-text a {
+  font-size: 24px;
   font-weight: 700;
   line-height: 145%; /* 26.1px */
   letter-spacing: -0.09px;

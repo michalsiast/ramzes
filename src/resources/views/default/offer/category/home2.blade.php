@@ -9,7 +9,7 @@
                     </div>
                 </div>
                 <div class="categories-item-text">
-                    <h3><a style="color: #000;" href="{{route('offer.index')}}">{{$item->title}}</a></h3>
+                    <h3><a style="color: #000;" href="{{route('offer_category.show.' . $item->id )}}">{{$item->title}}</a></h3>
                     {{--                <h4>Produktów</h4>--}}
                 </div>
         </div>

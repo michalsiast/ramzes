@@ -68,17 +68,35 @@
     </div>
 </div>
 
-<div class="promotions promotions-two" style="padding-bottom: 80px;">
+<div class="promotions promotions-two" style="padding-bottom: 40px;">
     <div class="container">
-        @foreach($page->gallery->items as $item)
-            @if($item->name == 'ulotka')
-            <div class="d-flex justify-content-center">
-                <img style="width: 100%; max-width: 600px" src="{{renderImage($item->url, 700, 600, 'fit')}}" alt="">
+        <div class="row">
+            <div class="col-lg-5 col-md-5">
+                <div class="promotions-img promotions-img-two">
+                    @if(!empty($fields->promo_link_3))
+                        <a href="{{$fields->promo_link_3}}"> <img src="{{asset('images/promobanner_3.jpg')}}"
+                                                                  class="w-100" style="border-radius: 15px;object-fit: cover;" alt="thumb"></a>
+                    @else
+                        <img src="{{asset('images/promobanner_3.jpg')}}"
+                             class="w-100" style="border-radius: 15px;object-fit: cover;" alt="thumb">
+                    @endif
+                </div>
             </div>
-            @endif
-        @endforeach
+            <div class="col-lg-7 col-md-7">
+                <div class="promotions-img">
+                    @if(!empty($fields->promo_link_4))
+                        <a href="{{$fields->promo_link_4}}"> <img src="{{asset('images/promobanner_4.jpg')}}"
+                                                                  class="w-100" style="border-radius: 15px;object-fit: cover;" alt="thumb"></a>
+                    @else
+                        <img src="{{asset('images/promobanner_4.jpg')}}"
+                             class="w-100" style="border-radius: 15px;object-fit: cover;" alt="thumb">
+                    @endif
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
 <section class="process s-padding" style="background-image: url({{ asset('images/Process-bg.png')}})">
     <div class="container">
         <div class="row">
@@ -104,23 +122,23 @@
         </div>
     </div>
 </section>
-<section class="popular s-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                @if(!empty($fields->popular_products_heading))
-                    <div class="popular-head">
-                        <h2>{{$fields->popular_products_heading}}</h2>
-                    </div>
-                @endif
-            </div>
-        </div>
+{{--<section class="popular s-padding">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-lg-12">--}}
+{{--                @if(!empty($fields->popular_products_heading))--}}
+{{--                    <div class="popular-head">--}}
+{{--                        <h2>{{$fields->popular_products_heading}}</h2>--}}
+{{--                    </div>--}}
+{{--                @endif--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
-        <div class="row popular-item-box-mt">
-            @include('default.offer.home')
-        </div>
-    </div>
-</section>
+{{--        <div class="row popular-item-box-mt">--}}
+{{--            @include('default.offer.home')--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</section>--}}
 
 
 @endsection

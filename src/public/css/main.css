@@ -85,6 +85,19 @@ a:focus {
     width: 100%;
     z-index: 0;
 }
+
+.mainRotator__item::after{
+    content: '';
+    position: absolute;
+    bottom: 80px;
+    right: -80%;
+    background-image: url(/images/slider_33.png);
+    height: 140px;
+    width: 100%;
+    z-index: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 .mainRotator__itemBody {
   position: absolute;
   top: 50%;
