@@ -2801,7 +2801,8 @@ p {
 .logo_heading{
     margin-bottom: 0px;
     line-height: 0px;
-    font-size: 19px;
+    font-size: 22px;
+    font-weight: 700;
 }
 .logo_heading a{
     color: var(--primary-color)
