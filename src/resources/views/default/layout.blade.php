@@ -98,7 +98,7 @@
                         <br><h4 class="logo_heading" style="font-size: 25px; font-width: 800;"><a href="tel:{{str_replace(' ', '', getConstField('phone3'))}}">{{getConstField('phone3')}}</a></h4>
                     @endif
                     @if(!empty(getConstField('email')))
-                        <br><h4 class="logo_heading"><a href="tel:{{str_replace(' ', '', getConstField('email'))}}">{{getConstField('email')}}</a></h4>
+                        <br><h4 class="logo_heading" style="font-size: 19px; font-width: 500;"><a href="tel:{{str_replace(' ', '', getConstField('email'))}}">{{getConstField('email')}}</a></h4>
                     @endif
                 </div>
             </div>
