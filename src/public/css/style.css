@@ -3971,6 +3971,21 @@ p {
   letter-spacing: -0.09px;
   color: #fff;
 }
+
+.mainRotator__itemBody--image-logo{
+    width: 500px;
+}
+
+@media(max-width: 640px){
+    .mainRotator__itemBody--image-logo{
+        width: 350px;
+    }
+    .banner-two .banner-two-taitel h2{
+        font-size: 56px;
+        line-height: 70px;
+    }
+}
+
 .food-details .next-prev-btn ul li .active {
   background-color: var(--primary-color);
   width: 170px;

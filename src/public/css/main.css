@@ -86,6 +86,8 @@ a:focus {
     z-index: 0;
 }
 
+
+
 .mainRotator__item::after{
     content: '';
     position: absolute;
@@ -97,6 +99,21 @@ a:focus {
     z-index: 0;
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+@media(max-width: 1100px){
+    .mainRotator__item::after{
+        content: '';
+        position: absolute;
+        bottom: 20px!important;
+        right: -45%!important;
+        background-image: url(/images/slider_33.png);
+        height: 140px;
+        width: 100%;
+        z-index: 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
 .mainRotator__itemBody {
   position: absolute;

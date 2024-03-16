@@ -7,7 +7,7 @@
             <div class="mainRotator__item"
                  style="background-image: url('{{renderImage($item->url, 1920, 700, `fit`)}}')">
                 <div class="mainRotator__itemBody banner-two-taitel">
-                    <img style="width: 500px" src="{{asset('images/logo.png')}}" alt="logo">
+                    <img class="mainRotator__itemBody--image-logo" src="{{asset('images/logo.png')}}" alt="logo">
                     <h1>{!! $item->text !!}</h1>
                 </div>
             </div>
