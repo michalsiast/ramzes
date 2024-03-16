@@ -89,13 +89,13 @@
             <div class="p-left">
                 <div class="logo" style="padding-left: 10px">
                     @if(!empty(getConstField('phone')))
-                        <h4 class="logo_heading"><a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">{{getConstField('phone')}}</a></h4>
+                        <h4 class="logo_heading" style="font-size: 25px; font-width: 800;"><a href="tel:{{str_replace(' ', '', getConstField('phone'))}}">{{getConstField('phone')}}</a></h4>
                     @endif
                     @if(!empty(getConstField('phone2')))
-                        <br><h4 class="logo_heading"><a href="tel:{{str_replace(' ', '', getConstField('phone2'))}}">{{getConstField('phone2')}}</a></h4>
+                        <br><h4 class="logo_heading" style="font-size: 25px; font-width: 800;"><a href="tel:{{str_replace(' ', '', getConstField('phone2'))}}">{{getConstField('phone2')}}</a></h4>
                     @endif
                     @if(!empty(getConstField('phone3')))
-                        <br><h4 class="logo_heading"><a href="tel:{{str_replace(' ', '', getConstField('phone3'))}}">{{getConstField('phone3')}}</a></h4>
+                        <br><h4 class="logo_heading" style="font-size: 25px; font-width: 800;"><a href="tel:{{str_replace(' ', '', getConstField('phone3'))}}">{{getConstField('phone3')}}</a></h4>
                     @endif
                     @if(!empty(getConstField('email')))
                         <br><h4 class="logo_heading"><a href="tel:{{str_replace(' ', '', getConstField('email'))}}">{{getConstField('email')}}</a></h4>
